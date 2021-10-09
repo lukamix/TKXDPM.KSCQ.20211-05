@@ -20,10 +20,12 @@
   
   
   ### **III. Nguyễn Năng Đức Anh**
-  
+  1, Mô tả tổng quan:
+    - Usecase tổng quan và phân rã
+    - Quy trình nghiệp vụ
+  2, Thêm tính tin cậy và hiệu năng
   
   
 ## Revisions
   
-  - Chung và Đức Anh xem lại đặc tả chức năng cho Đức và chỉnh sửa....
-  - Đức ngồi đợi các bạn hoàn thành...
+  - Chung và Đức Anh xem lại đặc tả chức năng cho Đức và chỉnh sửa...
