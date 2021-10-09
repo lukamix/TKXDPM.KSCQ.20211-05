@@ -5,7 +5,7 @@
   Tạo SRS cho Capstone Project
   
 ## Contribution
-  ### **Nguyễn Bá Đức**
+  ### **I. Nguyễn Bá Đức**
   
    1, Đặc tả các chức năng cho 3 Usecase :
     
@@ -15,11 +15,11 @@
     
    2,  Thêm tính hỗ trợ, tính dễ bảo trì, tính khả chuyển
    
-   **Trần Quốc Chung**
+   ### **II. Trần Quốc Chung**
+   
   
   
-  
-  **Nguyễn Năng Đức Anh**
+  ### **III. Nguyễn Năng Đức Anh**
   
   
   
