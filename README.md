@@ -15,7 +15,8 @@
     
    2,  Thêm tính hỗ trợ, tính dễ bảo trì, tính khả chuyển
    
-   3,  Vẽ class diagram, Sequence diagram, Communication diagram cho Usecase Trả Xe Đạp
+   3,  Vẽ class diagram, Sequence diagram, Communication diagram cho Usecase
+    - Trả Xe Đạp
    
    ### **II. Trần Quốc Chung**
     - Đặc tả các chức năng cho usecase : Xem xe đạp trong trạm
