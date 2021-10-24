@@ -20,7 +20,11 @@
     - Trả Xe Đạp
    
    ### **II. Trần Quốc Chung**
-    - Đặc tả các chức năng cho usecase : Xem xe đạp trong trạm
+   1, Đặc tả các chức năng cho usecase : Xem xe đạp trong trạm
+   
+   2, Vẽ Class Diagram, Sequence Diagram , Communication Diagram cho Usecase 
+   
+    - Xem thông tin xe đạp 
   
   
   ### **III. Nguyễn Năng Đức Anh**
@@ -36,4 +40,3 @@
   - Mượn xe đạp
   
 ## Revisions
-  - Chờ Chung làm xong nốt phần xem xe
