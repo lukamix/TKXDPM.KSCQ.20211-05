@@ -31,8 +31,8 @@
     - Quy trình nghiệp vụ
     
   2, Thêm tính tin cậy và hiệu năng
-  
+  3, Đã vẽ Class Diagram; Sequence Diagram và Communication Diagram cho Usecase
+  - Mượn xe đạp
   
 ## Revisions
-  
-  - Chung và Đức Anh xem lại đặc tả chức năng cho Đức và chỉnh sửa...
+  - Chờ Chung làm xong nốt phần xem xe
