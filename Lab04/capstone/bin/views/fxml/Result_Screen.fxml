@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1920.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="1920.0" prefWidth="1080.0">
+         <children>
+            <AnchorPane prefHeight="110.0" prefWidth="1086.0" style="-fx-background-color: pink;">
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="191.0" layoutX="22.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../TEMP/ecobike.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="183.0" layoutY="19.0" prefHeight="72.0" prefWidth="545.0" text="Transaction">
+                     <font>
+                        <Font name="Courier New Bold" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="93.0" layoutY="494.0" prefHeight="278.0" prefWidth="934.0" text="Giao dịch thành công" textFill="#00ff3c">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="752.0" prefHeight="236.0" prefWidth="903.0" text="(Kiểm tra tài khoản để xác nhận giao dịch. Tài khoản sẽ mất 10-15s để thực hiện giao dịch ngân hàng. Nếu trong vòng 5 phút không nhận lại được tiền thì vui lòng liên hệ CSKH : 0365182504)." wrapText="true">
+               <font>
+                  <Font name="System Italic" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="308.0" layoutY="1193.0" mnemonicParsing="false" prefHeight="174.0" prefWidth="407.0" style="-fx-background-color: yellow;" text="Xác nhận" textFill="#1122dc">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
