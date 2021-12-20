@@ -1,4 +1,4 @@
-package entity.dock;
+package entity.parking;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import entity.bike.Bike;
 import entity.db.CapstoneDB;
 
 public class Parking {
@@ -56,11 +57,13 @@ public class Parking {
 		}
 		return listAll;
 	}
-	public static List<Parking> getListParkingByKeyWord() throws SQLException {
+	public static List<Parking> getListParkingByKeyWord(String keyword) throws SQLException {
 		String query = "select * from Parking where Name like '%?%' or Address like '%?%' ";
 		List<Parking> listAll = new ArrayList<>();
 		Connection connection = CapstoneDB.getConnection();
 		PreparedStatement prep = connection.prepareStatement(query);
+		prep.setString(1 , keyword);
+		prep.setString(2, keyword);
 		ResultSet res = prep.executeQuery();
 		while(res.next()) {
 			int i= res.getInt("ID");
@@ -70,5 +73,25 @@ public class Parking {
 			listAll.add(p);
 		}
 		return listAll;
+	}
+	public static List<Bike> getAllBikeInParking(int idparking) throws SQLException {
+		String query = "select * from Bike where IsAvailable = true and ParkingID = ?" ;
+		List<Bike> listAllBike = new ArrayList<>();
+		Connection connection = CapstoneDB.getConnection();
+		PreparedStatement prep = connection.prepareStatement(query);
+		prep.setInt(1, idparking);
+		ResultSet res = prep.executeQuery();
+		while(res.next()) {
+			int BikeId = res.getInt("BikeId");
+			String Type = res.getString("Type");
+			String Producer = res.getString("Producer");
+			int Deposit = res.getInt("Deposit");
+			String Image = res.getString("Image");
+			int ParkingID = res.getInt("ParkingID");
+			boolean isAvailable = res.getBoolean("isAvailable");
+			Bike p = new Bike(BikeId, Type,Producer,Deposit,Image,ParkingID,isAvailable);
+			listAllBike.add(p);
+		}
+		return listAllBike;
 	}
 } 

@@ -1,5 +1,5 @@
 --
--- File generated with SQLiteStudio v3.3.3 on Mon Dec 6 18:47:07 2021
+-- File generated with SQLiteStudio v3.3.3 on Mon Dec 20 10:32:09 2021
 --
 -- Text encoding used: System
 --
@@ -8,17 +8,13 @@ BEGIN TRANSACTION;
 
 -- Table: Bike
 CREATE TABLE Bike (
-    BikeId            INTEGER       PRIMARY KEY AUTOINCREMENT,
-    Type              INTEGER       NOT NULL,
-    Producer          NVARCHAR (50) NOT NULL,
-    Deposit           INTEGER       NOT NULL,
-    Image             TEXT          NOT NULL,
-    ParkingID         INTEGER       NOT NULL,
-    IsAvailable       BOOLEAN       NOT NULL,
-    MaxSpeed          INTEGER,
-    MaxTravelDistance INTEGER,
-    LicensePlate      VARCHAR (15),
-    RemainBattery     INTEGER,
+    BikeId      INTEGER       PRIMARY KEY AUTOINCREMENT,
+    Type        NVARCHAR (50) NOT NULL,
+    Producer    NVARCHAR (50) NOT NULL,
+    Deposit     INTEGER       NOT NULL,
+    Image       TEXT          NOT NULL,
+    ParkingID   INTEGER       NOT NULL,
+    IsAvailable BOOLEAN       NOT NULL,
     CONSTRAINT fk_parkingID FOREIGN KEY (
         ParkingID
     )
@@ -33,6 +29,19 @@ CREATE TABLE Card (
     Owner       VARCHAR (50) NOT NULL,
     Cvvcode     VARCHAR (12) NOT NULL,
     DateExpired VARCHAR (12) NOT NULL
+);
+
+
+-- Table: EBike
+CREATE TABLE EBike (
+    BikeId           INTEGER      PRIMARY KEY,
+    MaxSpeed         INTEGER      NOT NULL,
+    RemainingBattery INTEGER      NOT NULL,
+    LicensePlate     VARCHAR (15),
+    CONSTRAINT fk_bikeID FOREIGN KEY (
+        BikeId
+    )
+    REFERENCES Bike (BikeId) 
 );
 
 
@@ -64,14 +73,6 @@ CREATE TABLE PaymentTransaction (
 );
 
 
--- Table: User
-CREATE TABLE User (
-    PhoneNumber CHAR (10)     PRIMARY KEY,
-    Password    VARCHAR (16)  NOT NULL,
-    Name        NVARCHAR (30) NOT NULL
-);
-
-
 -- Table: RentalInvoice
 CREATE TABLE RentalInvoice (
     IDinvoice   INTEGER   PRIMARY KEY AUTOINCREMENT,
@@ -89,6 +90,14 @@ CREATE TABLE RentalInvoice (
         PhoneNumber
     )
     REFERENCES User (PhoneNumber) 
+);
+
+
+-- Table: User
+CREATE TABLE User (
+    PhoneNumber CHAR (10)     PRIMARY KEY,
+    Password    VARCHAR (16)  NOT NULL,
+    Name        NVARCHAR (30) NOT NULL
 );
 
 
