@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import common.exception.BikeNotAvailableException;
 import entity.bike.Bike;
 import entity.db.CapstoneDB;
 
@@ -94,5 +95,15 @@ public class Parking {
 			listAllBike.add(p);
 		}
 		return listAllBike;
+	}
+	public static void checkBikeAvailability(int BikeID, int idparking) throws SQLException, BikeNotAvailableException {
+		boolean avail = false;
+		List<Bike> allBike = getAllBikeInParking(idparking);
+		for (Bike p : allBike ) {
+			if (p.getBikeId() == BikeID && p.isAvailable()== true) avail = true;
+		}
+		if(!avail) {
+			throw new BikeNotAvailableException();
+		}
 	}
 } 

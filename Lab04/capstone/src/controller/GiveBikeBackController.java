@@ -36,7 +36,7 @@ public class GiveBikeBackController {
         return fee;
 	}
 	/**
-	 * @param rentfee is the rent bike fee calculted by caculateRentBikeFee method
+	 * @param rentfee is the rent bike fee calculated by caculateRentBikeFee method
 	 * @param bike_cost is value of the bike and has one in three values below:
 	 * (Config.SINGLE_BIKE_COST||Configs.SINGLE_ELCTRO_BIKE_COST||Configs.DOUBLE_BIKE_COST)
 	 * @return refund 
