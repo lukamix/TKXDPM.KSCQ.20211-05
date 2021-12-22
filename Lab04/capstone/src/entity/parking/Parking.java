@@ -74,6 +74,7 @@ public class Parking {
 		}
 		return listAll;
 	}
+	
 	public static List<Bike> getAllBikeInParking(int idparking) throws SQLException {
 		String query = "select * from Bike where IsAvailable = true and ParkingID = ?" ;
 		List<Bike> listAllBike = new ArrayList<>();

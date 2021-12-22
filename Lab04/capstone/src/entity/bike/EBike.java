@@ -17,6 +17,7 @@ public class EBike extends Bike {
 		this.RemainingBattery=remainingbattery;
 		this.LicensePlate=license;
 	}
+	public EBike() {}
 	
 	@Override
 	public Bike getBikeDetailById(int bikeid) throws SQLException {

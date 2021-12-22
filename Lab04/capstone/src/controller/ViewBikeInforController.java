@@ -1,20 +1,65 @@
 package controller;
 
-public class ViewBikeInforController {
+import java.sql.SQLException;
+import java.util.List;
+
+import entity.bike.Bike;
+import entity.bike.EBike;
+import entity.parking.Parking;
+
 /**
- * @param dockKey: ten cua bai gui xe
- * @param bikeID : ID cua xe
+ * 
+ * @author quocc
+ *
  */
-	static void searchDock(String dockKey) {
-		/**
-		 * dung de tim kiem thong tin bai gui xe dua vao key
-		 * @param dockKey: key ten bai gui xe
-		 */
+public class ViewBikeInforController { 
+
+	/**
+	 * Lấy ra danh sách các bãi đỗ xe tìm kiếm theo từ khóa 
+	 * @param keyword : từ khóa người dùng nhập vào 
+	 * @return List[Parking] : list các bãi đỗ xe 
+	 * @throws SQLException
+	 */
+	public List<Parking> getListParkingByKeyWord(String keyword) throws SQLException{
+		return new Parking().getListParkingByKeyWord(keyword); 
 	}
-	static void getBikeDetail(String bikeID) {
-		/**
-		 * dung de lay thong tin cua 1 xe trong bai gui
-		 * @param bikeID: ID xe
-		 */
+	
+	/**
+	 * Lấy ra danh sách tất cả các bãi đỗ xe  
+	 * @return List[Parking] : danh sách bãi đỗ xe
+	 * @throws SQLException
+	 */
+	public List<Parking> getAllParking() throws SQLException {
+		return new Parking().getListParking();
+	}
+	
+	/**
+	 * Lấy thông tin chi tiết của xe 
+	 * @param bikeID : ID của xe 
+	 * @return Bike : đối tượng Bike
+	 * @throws SQLException
+	 */
+	public Bike getBikeDetail(int bikeID) throws SQLException{
+		return new Bike().getBikeDetailById(bikeID);
+	}
+	
+	/**
+	 * Lấy thông tin chi tiết của xe đạp điện 
+	 * @param bikeID : id của xe 
+	 * @return Bike 
+	 * @throws SQLException
+	 */
+	public Bike getEBikeDetail(int bikeID) throws SQLException {
+		return new EBike().getBikeDetailById(bikeID);
+	}
+
+	/**
+	 * Lấy ra danh sách tất cả các xe hiện có trong bãi xe
+	 * @param parkingID : id của bãi xe
+	 * @return List[Bike] : danh sách xe 
+	 * @throws SQLException
+	 */
+	public List<Bike> getParkingDetail(int parkingID) throws SQLException {
+		return new Parking().getAllBikeInParking(parkingID);
 	}
 }
