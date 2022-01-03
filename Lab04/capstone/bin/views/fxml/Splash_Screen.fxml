@@ -5,13 +5,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1920.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <ImageView fitHeight="412.0" fitWidth="515.0" layoutX="283.0" layoutY="754.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logo" fitHeight="155.0" fitWidth="186.0" layoutX="80.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../TEMP/ecobike.png" />
+                  <Image url="@../../../assets/images/Logo.png" />
                </image>
             </ImageView>
          </children>

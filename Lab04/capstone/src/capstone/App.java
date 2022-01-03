@@ -49,14 +49,13 @@ public class App extends Application {
 
 			// After fade out, load actual content
 			fadeOut.setOnFinished((e) -> {
-//				try {
-//					HomeScreenHandler homeHandler = new HomeScreenHandler(primaryStage, Configs.HOME_PATH);
-//					homeHandler.setScreenTitle("Home Screen");
-//					homeHandler.setImage();
-//					homeHandler.show();
-//				} catch (IOException e1) {
-//					e1.printStackTrace();
-//				}
+				try {
+					HomeScreenHandler homeHandler = new HomeScreenHandler(primaryStage, Configs.HOME_PATH);
+					homeHandler.setScreenTitle("Home Screen");
+					homeHandler.show();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 			});
 		} catch (Exception e) {
 			e.printStackTrace();
