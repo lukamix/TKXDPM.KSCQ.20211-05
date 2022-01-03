@@ -6,28 +6,33 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="530.0" style="-fx-background-color: #80d4ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="107.0" prefWidth="360.0" style="-fx-background-color: #80d4ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="453.0" text="Loai xe ">
+      <Label fx:id="type" layoutX="14.0" prefHeight="35.0" prefWidth="232.0" text="Loai xe ">
          <font>
-            <Font name="System Bold" size="36.0" />
+            <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="21.0" layoutY="67.0" prefHeight="35.0" prefWidth="72.0" text="Mã xe">
+      <Label layoutX="14.0" layoutY="36.0" prefHeight="35.0" prefWidth="72.0" text="Mã xe">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="93.0" layoutY="102.0" text="80 %" visible="false">
+      <Label fx:id="battery" layoutX="100.0" layoutY="72.0" text="80 %">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="21.0" layoutY="98.0" prefHeight="35.0" prefWidth="72.0" text="Pin" visible="false">
+      <Label fx:id="labelBattery" layoutX="14.0" layoutY="68.0" prefHeight="35.0" prefWidth="72.0" text="Pin">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ImageView fitHeight="107.0" fitWidth="115.0" layoutX="401.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image" fitHeight="95.0" fitWidth="93.0" layoutX="253.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="bikeId" layoutX="100.0" layoutY="40.0" text="B012">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

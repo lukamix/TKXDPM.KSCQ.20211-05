@@ -6,69 +6,72 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="960.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="87.0" prefWidth="540.0" style="-fx-background-color: pink;">
+      <ImageView fx:id="imageBike" fitHeight="304.0" fitWidth="360.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="22.0" layoutY="378.0" text="Định danh xe">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="421.0" text="Loại xe">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="466.0" text="Tiền cọc">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="512.0" text="Pin ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="557.0" text="Quãng đường tối đa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="bikeId" layoutX="201.0" layoutY="378.0" prefHeight="30.0" prefWidth="139.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="type" layoutX="201.0" layoutY="421.0" prefHeight="30.0" prefWidth="139.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="deposit" layoutX="201.0" layoutY="466.0" prefHeight="30.0" prefWidth="139.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="battery" layoutX="201.0" layoutY="512.0" prefHeight="30.0" prefWidth="139.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="maxDistance" layoutX="248.0" layoutY="557.0" prefHeight="30.0" prefWidth="92.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="42.0" prefWidth="360.0" style="-fx-background-color: pink;">
          <children>
-            <ImageView fitHeight="87.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" />
-            <Label alignment="CENTER" layoutX="120.0" prefHeight="87.0" prefWidth="300.0" text="BIKE DETAIL">
+            <ImageView fitHeight="34.0" fitWidth="49.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/images/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="9.0" prefHeight="25.0" prefWidth="159.0" text="Bike detail">
                <font>
-                  <Font size="30.0" />
+                  <Font name="Courier New Bold" size="20.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <ImageView fx:id="imageBike" fitHeight="368.0" fitWidth="412.0" layoutX="64.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="37.0" layoutY="516.0" text="Định danh xe">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="37.0" layoutY="559.0" text="Loại xe">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="37.0" layoutY="604.0" text="Tiền cọc">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="37.0" layoutY="650.0" text="Pin ">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="37.0" layoutY="695.0" text="Quãng đường tối đa">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="bikeId" layoutX="216.0" layoutY="516.0" text="Label">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="type" layoutX="216.0" layoutY="559.0" text="Label">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="deposit" layoutX="216.0" layoutY="604.0" text="Label">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="battery" layoutX="216.0" layoutY="650.0" text="Label">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="maxDistance" layoutX="263.0" layoutY="695.0" text="Label">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

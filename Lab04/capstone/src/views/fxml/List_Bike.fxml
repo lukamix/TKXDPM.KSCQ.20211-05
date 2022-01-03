@@ -8,18 +8,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="67.0" prefWidth="360.0" style="-fx-background-color: pink;">
-         <children>
-            <ImageView fitHeight="87.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" />
-            <Label alignment="CENTER" layoutX="120.0" prefHeight="87.0" prefWidth="239.0" text="Bãi xe BK1">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <ListView fx:id="listBike" layoutX="6.0" layoutY="291.0" prefHeight="345.0" prefWidth="528.0" />
-      <Pane layoutX="5.0" layoutY="87.0" prefHeight="200.0" prefWidth="528.0">
+      <ListView fx:id="listBike" layoutY="219.0" prefHeight="425.0" prefWidth="360.0" />
+      <Pane layoutX="4.0" layoutY="48.0" prefHeight="171.0" prefWidth="352.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0">
          <children>
             <Label layoutX="6.0" layoutY="11.0" prefHeight="27.0" prefWidth="136.0" text="Tên bãi xe">
                <font>
@@ -73,5 +63,19 @@
             </Label>
          </children>
       </Pane>
+      <AnchorPane prefHeight="42.0" prefWidth="360.0" style="-fx-background-color: pink;">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="49.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/images/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="9.0" prefHeight="25.0" prefWidth="185.0" text="Parking detail">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
