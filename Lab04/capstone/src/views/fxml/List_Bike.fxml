@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="67.0" prefWidth="360.0" style="-fx-background-color: pink;">
+         <children>
+            <ImageView fitHeight="87.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" layoutX="120.0" prefHeight="87.0" prefWidth="239.0" text="Bãi xe BK1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="listBike" layoutX="6.0" layoutY="291.0" prefHeight="345.0" prefWidth="528.0" />
+      <Pane layoutX="5.0" layoutY="87.0" prefHeight="200.0" prefWidth="528.0">
+         <children>
+            <Label layoutX="6.0" layoutY="11.0" prefHeight="27.0" prefWidth="136.0" text="Tên bãi xe">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="38.0" prefHeight="27.0" prefWidth="136.0" text="Vị trí">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="67.0" prefHeight="27.0" prefWidth="136.0" text="Số xe đạp ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="97.0" prefHeight="27.0" prefWidth="136.0" text="Số xe đạp đôi">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="130.0" prefHeight="27.0" prefWidth="136.0" text="Số xe đạp điện ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="tenBaiXe" layoutX="142.0" layoutY="14.0" prefHeight="27.0" prefWidth="202.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="viTriBaiXe" layoutX="142.0" layoutY="41.0" prefHeight="27.0" prefWidth="208.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="soXeDap" layoutX="142.0" layoutY="70.0" prefHeight="27.0" prefWidth="208.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="soXeDapDoi" layoutX="142.0" layoutY="100.0" prefHeight="27.0" prefWidth="202.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="soXeDapDien" layoutX="142.0" layoutY="133.0" prefHeight="27.0" prefWidth="202.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
