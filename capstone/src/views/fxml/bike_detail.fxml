@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageBike" fitHeight="304.0" fitWidth="360.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/images/xe_dap_dien.png" />
+         </image></ImageView>
+      <Label layoutX="24.0" layoutY="342.0" text="Định danh xe">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="385.0" text="Loại xe">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="430.0" text="Tiền cọc">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="476.0" text="Pin ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="521.0" text="Quãng đường tối đa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="bikeId" layoutX="203.0" layoutY="342.0" prefHeight="30.0" prefWidth="139.0" text="EBIKE001">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="type" layoutX="203.0" layoutY="385.0" prefHeight="30.0" prefWidth="150.0" text="Xe đạp điện">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="deposit" layoutX="203.0" layoutY="430.0" prefHeight="30.0" prefWidth="139.0" text="700.000đ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="battery" layoutX="203.0" layoutY="476.0" prefHeight="30.0" prefWidth="139.0" text="89%">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="maxDistance" layoutX="250.0" layoutY="521.0" prefHeight="30.0" prefWidth="92.0" text="72km">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="42.0" prefWidth="360.0" style="-fx-background-color: pink;">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="49.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/images/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="9.0" prefHeight="25.0" prefWidth="159.0" text="Bike detail">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="okbtn" layoutX="40.0" layoutY="574.0" mnemonicParsing="false" onMouseClicked="#onOKbtnClick" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #6667ab;" text="OK" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="rentbtn" layoutX="239.0" layoutY="572.0" mnemonicParsing="false" onMouseClicked="#onRentBtnClick" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: pink;" text="Thuê" textFill="WHITE" />
+   </children>
+</AnchorPane>
