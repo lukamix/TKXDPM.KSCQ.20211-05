@@ -8,146 +8,141 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1920.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="1920.0" prefWidth="1080.0">
+      <AnchorPane prefHeight="50.0" prefWidth="360.0" style="-fx-background-color: pink;">
          <children>
-            <AnchorPane layoutX="-6.0" prefHeight="110.0" prefWidth="1086.0" style="-fx-background-color: pink;">
-               <children>
-                  <ImageView fitHeight="108.0" fitWidth="191.0" layoutX="22.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../TEMP/ecobike.png" />
-                     </image>
-                  </ImageView>
-                  <Label layoutX="183.0" layoutY="19.0" prefHeight="72.0" prefWidth="545.0" text="GIVE BIKE BACK">
-                     <font>
-                        <Font name="Courier New Bold" size="60.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <ImageView fitHeight="765.0" fitWidth="1028.0" layoutX="27.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="40.0" fitWidth="59.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../TEMP/xe_dap_dien.png" />
+                  <Image url="@../../../assets/images/Logo.png" />
                </image>
             </ImageView>
-            <Label layoutX="281.0" layoutY="999.0" prefHeight="78.0" prefWidth="288.0" text="Định danh xe :">
+            <Label layoutX="71.0" layoutY="10.0" prefHeight="32.0" prefWidth="200.0" text="GIVE BIKE BACK">
                <font>
-                  <Font name="System Bold" size="36.0" />
+                  <Font name="Courier New Bold" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="558.0" layoutY="1013.0" prefHeight="50.0" prefWidth="206.0" text="EBIKE_01011">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="74.0" layoutY="1091.0" prefHeight="78.0" prefWidth="288.0" text="Loại xe :">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="649.0" layoutY="1101.0" prefHeight="50.0" prefWidth="397.0" text="Xe đạp điện">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="74.0" layoutY="1169.0" prefHeight="126.0" prefWidth="451.0" text="Giá thuê 40 phút đầu (10 phút đầu free) :" wrapText="true">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="649.0" layoutY="1179.0" prefHeight="50.0" prefWidth="397.0" text="10.000 đ">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="74.0" layoutY="1287.0" prefHeight="78.0" prefWidth="411.0" text="Giá tăng mỗi 15 phút :">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="649.0" layoutY="1297.0" prefHeight="50.0" prefWidth="397.0" text="3.000 đ">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="74.0" layoutY="1365.0" prefHeight="78.0" prefWidth="411.0" text="Thời gian thuê :">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="409.0" layoutY="1379.0" prefHeight="50.0" prefWidth="59.0" text="từ :">
-               <font>
-                  <Font name="System Italic" size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="479.0" layoutY="1379.0" prefHeight="50.0" prefWidth="248.0" text="8h30 12/11/2021">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="744.0" layoutY="1379.0" prefHeight="50.0" prefWidth="88.0" text="đến :">
-               <font>
-                  <Font name="System Italic" size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="832.0" layoutY="1379.0" prefHeight="50.0" prefWidth="248.0" text="9h30 12/11/2021">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="74.0" layoutY="1429.0" prefHeight="78.0" prefWidth="411.0" text="Tổng thời gian :">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="649.0" layoutY="1439.0" prefHeight="50.0" prefWidth="397.0" text="1h">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="74.0" layoutY="1493.0" prefHeight="78.0" prefWidth="411.0" text="Thành tiền :">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="300.0" layoutY="1507.0" prefHeight="50.0" prefWidth="338.0" text="10.000 + 3.000 x 1.66 =">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="649.0" layoutY="1507.0" prefHeight="50.0" prefWidth="397.0" text="15.000 đ" textFill="RED">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="72.0" layoutY="1557.0" prefHeight="78.0" prefWidth="411.0" text="Tiền cọc :">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="647.0" layoutY="1567.0" prefHeight="50.0" prefWidth="397.0" text="700.000 đ" textFill="#0400ff">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="72.0" layoutY="1617.0" prefHeight="78.0" prefWidth="411.0" text="Tiền dư :">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-            </Label>
-            <Label layoutX="647.0" layoutY="1627.0" prefHeight="50.0" prefWidth="397.0" text="685.000 đ" textFill="#ff00d6">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Button layoutX="398.0" layoutY="1732.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="254.0" style="-fx-background-color: yellow;" text="Xác nhận" textFill="#ff4b4b">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Button>
          </children>
       </AnchorPane>
+      <ImageView fx:id="bike_image" fitHeight="255.0" fitWidth="338.0" layoutX="11.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/images/xe_dap_dien.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="330.0" prefHeight="24.0" prefWidth="88.0" text="Định danh xe :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="bike_code" layoutX="188.0" layoutY="330.0" prefHeight="24.0" prefWidth="66.0" text="EBIKE_01011">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="354.0" prefHeight="24.0" prefWidth="50.0" text="Loại xe :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="bike_type" layoutX="226.0" layoutY="358.0" prefHeight="16.0" prefWidth="104.0" text="Xe đạp điện">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="378.0" prefHeight="50.0" prefWidth="125.0" text="Giá thuê 40 phút đầu (10 phút đầu free) :" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="rent_fee" layoutX="226.0" layoutY="391.0" prefHeight="24.0" prefWidth="59.0" text="10.000 đ">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="428.0" prefHeight="24.0" prefWidth="133.0" text="Giá tăng mỗi 15 phút :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="bonus_fee" layoutX="229.0" layoutY="432.0" prefHeight="6.0" prefWidth="50.0" text="3.000 đ">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="452.0" prefHeight="24.0" prefWidth="95.0" text="Thời gian thuê :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="452.0" prefHeight="24.0" prefWidth="20.0" text="từ :">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="start_rent_time" layoutX="144.0" layoutY="452.0" prefHeight="24.0" prefWidth="88.0" text="8h30 12/11/2021">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="456.0" prefHeight="16.0" prefWidth="29.0" text="đến :">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="finish_rent_time" layoutX="262.0" layoutY="456.0" prefHeight="16.0" prefWidth="88.0" text="9h30 12/11/2021">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="472.0" prefHeight="32.0" prefWidth="95.0" text="Tổng thời gian :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_time" layoutX="232.0" layoutY="480.0" prefHeight="16.0" prefWidth="30.0" text="1h">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="504.0" prefHeight="24.0" prefWidth="75.0" text="Thành tiền :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="recipe" layoutX="106.0" layoutY="504.0" prefHeight="24.0" prefWidth="118.0" text="10.000 + 3.000 x 1.66 =">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_fee" layoutX="229.0" layoutY="508.0" prefHeight="16.0" prefWidth="66.0" text="15.000 đ" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="528.0" prefHeight="24.0" prefWidth="59.0" text="Tiền cọc :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="first_money" layoutX="230.0" layoutY="528.0" prefHeight="24.0" prefWidth="50.0" text="700.000 đ" textFill="#0400ff">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="552.0" prefHeight="24.0" prefWidth="50.0" text="Tiền dư :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="refund_money" layoutX="229.0" layoutY="556.0" prefHeight="16.0" prefWidth="66.0" text="685.000 đ" textFill="#ff00d6">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="115.0" layoutY="589.0" mnemonicParsing="false" onMouseClicked="#onConfirmbtnClick" prefHeight="24.0" prefWidth="118.0" style="-fx-background-color: yellow;" text="Xác nhận" textFill="#ff4b4b">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
    </children>
-</StackPane>
+</AnchorPane>
