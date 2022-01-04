@@ -35,6 +35,15 @@
          </image>
       </ImageView>
       <Button fx:id="test_place" layoutX="189.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#onTestPlacebtnClick" prefHeight="23.0" prefWidth="0.0" style="-fx-border-radius: 20; -fx-border-width: 1; -fx-background-color: #6667ab;" />
+      <Button fx:id="view_listbtn" layoutX="2.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#onViewListbtnClick" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #6667ab;" text="Xem danh sách" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="give_bike_back_button" layoutX="272.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#ongivebikebackbuttonClick" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: pink;" text="Trả xe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
       <AnchorPane fx:id="view_bike_pop_up" layoutX="1.0" layoutY="311.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="331.0" prefWidth="362.0" style="-fx-background-color: #ffffff; -fx-border-width: 3; -fx-border-color: #6667ab;" visible="false">
          <children>
             <Label layoutX="32.0" layoutY="14.0" prefHeight="27.0" prefWidth="54.0" text="Tên bãi xe :">
@@ -72,7 +81,7 @@
                   <Font name="System Bold" size="10.0" />
                </font>
             </Label>
-            <Label fx:id="number_of_bike" layoutX="97.0" layoutY="143.0" prefHeight="16.0" prefWidth="29.0" text="65">
+            <Label fx:id="number_of_bike" layoutX="97.0" layoutY="143.0" prefHeight="16.0" prefWidth="29.0" text="0">
                <font>
                   <Font size="10.0" />
                </font>
@@ -82,7 +91,7 @@
                   <Font name="System Bold" size="10.0" />
                </font>
             </Label>
-            <Label fx:id="number_of_electro_bike" layoutX="121.0" layoutY="182.0" prefHeight="16.0" prefWidth="18.0" text="15">
+            <Label fx:id="number_of_electro_bike" layoutX="121.0" layoutY="182.0" prefHeight="16.0" prefWidth="18.0" text="3">
                <font>
                   <Font size="10.0" />
                </font>
@@ -92,7 +101,7 @@
                   <Font name="System Bold" size="10.0" />
                </font>
             </Label>
-            <Label fx:id="number_of_couple_bike" layoutX="120.0" layoutY="215.0" prefHeight="27.0" prefWidth="18.0" text="12">
+            <Label fx:id="number_of_couple_bike" layoutX="120.0" layoutY="215.0" prefHeight="27.0" prefWidth="18.0" text="0">
                <font>
                   <Font size="10.0" />
                </font>
@@ -112,7 +121,7 @@
                   <Font name="System Bold" size="10.0" />
                </font>
             </Label>
-            <Label fx:id="electro_bike_space" layoutX="211.0" layoutY="182.0" prefHeight="16.0" prefWidth="11.0" text="5">
+            <Label fx:id="electro_bike_space" layoutX="211.0" layoutY="182.0" prefHeight="16.0" prefWidth="11.0" text="2">
                <font>
                   <Font size="10.0" />
                </font>
@@ -122,7 +131,7 @@
                   <Font name="System Bold" size="10.0" />
                </font>
             </Label>
-            <Label fx:id="couple_bike_space" layoutX="211.0" layoutY="219.0" prefHeight="23.0" prefWidth="11.0" text="8">
+            <Label fx:id="couple_bike_space" layoutX="211.0" layoutY="219.0" prefHeight="23.0" prefWidth="11.0" text="5">
                <font>
                   <Font size="10.0" />
                </font>
@@ -157,7 +166,7 @@
                   <Font size="10.0" />
                </font>
             </Label>
-            <Button fx:id="view_detail" layoutX="249.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#onViewDetailClick" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: yellow;" text="Xem chi tiết" textFill="#005176">
+            <Button fx:id="view_detail" layoutX="249.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#onViewDetailClick" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: yellow;" text="Xem thông tin" textFill="#005176">
                <font>
                   <Font name="System Bold" size="9.0" />
                </font>

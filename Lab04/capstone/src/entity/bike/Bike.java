@@ -12,6 +12,9 @@ public class Bike {
 	
 	private int BikeId ;
 	private String Type;
+	private final String Battery ="90%";
+	
+
 	private String Producer;
 	private int Deposit;
 	private String Image;
@@ -33,7 +36,9 @@ public class Bike {
 		this.isAvailable = isAvailable;
 	}
 
-
+	public String getBattery() {
+		return Battery;
+	}
 	public int getBikeId() {
 		return BikeId;
 	}

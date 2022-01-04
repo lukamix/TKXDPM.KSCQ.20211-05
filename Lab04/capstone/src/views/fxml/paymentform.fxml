@@ -84,27 +84,37 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="card_code" layoutX="212.0" layoutY="210.0" prefHeight="18.0" prefWidth="130.0" text="1123456">
-         <font>
-            <Font size="11.0" />
-         </font>
-      </Label>
-      <Label layoutX="23.0" layoutY="248.0" prefHeight="16.0" prefWidth="50.0" text="Mã pin :">
+      <Label layoutX="21.0" layoutY="282.0" prefHeight="16.0" prefWidth="50.0" text="Mã pin :">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <TextArea fx:id="card_pin" layoutX="153.0" layoutY="242.0" opacity="0.48" prefHeight="16.0" prefWidth="187.0" promptText="Tìm kiếm ở đây" text="Nhập mã pin để thanh toán">
+      <TextArea fx:id="card_pin" layoutX="151.0" layoutY="276.0" opacity="0.48" prefHeight="16.0" prefWidth="187.0" promptText="Tìm kiếm ở đây" text="864">
          <font>
             <Font size="9.0" />
          </font>
       </TextArea>
-      <Label layoutX="23.0" layoutY="283.0" prefHeight="22.0" prefWidth="106.0" text="Ngày phát hành :">
+      <Label layoutX="21.0" layoutY="317.0" prefHeight="22.0" prefWidth="106.0" text="Ngày phát hành :">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <TextArea fx:id="expired_date" layoutX="153.0" layoutY="279.0" opacity="0.48" prefHeight="29.0" prefWidth="187.0" promptText="Tìm kiếm ở đây" text="Nhập ngày phát hành">
+      <TextArea fx:id="expired_date" layoutX="151.0" layoutY="313.0" opacity="0.48" prefHeight="29.0" prefWidth="187.0" promptText="Tìm kiếm ở đây" text="11/25">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="card_code" layoutX="153.0" layoutY="201.0" opacity="0.49" prefHeight="30.0" prefWidth="187.0" text="kscq1_group5_2021">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="21.0" layoutY="246.0" prefHeight="18.0" prefWidth="83.0" text="Chủ sở hữu :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="holder_name" layoutX="151.0" layoutY="240.0" opacity="0.48" prefHeight="30.0" prefWidth="187.0" text="Group 5">
          <font>
             <Font size="9.0" />
          </font>

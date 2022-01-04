@@ -16,6 +16,11 @@ public class Parking {
 	private int ID;
 	private String Name;
 	private String Address ;
+	private final int numberOfBike = 3;
+	
+	public int getNumberOfBike() {
+		return numberOfBike;
+	}
 	public int getID() {
 		return ID;
 	}

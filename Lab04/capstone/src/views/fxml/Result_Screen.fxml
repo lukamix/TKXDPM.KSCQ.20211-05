@@ -8,40 +8,37 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0">
+      <Label fx:id="result" layoutX="22.0" layoutY="96.0" prefHeight="46.0" prefWidth="315.0" text="Giao dịch thành công" textFill="#00ff3c">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="360.0" style="-fx-background-color: pink;">
          <children>
-            <Label layoutX="22.0" layoutY="96.0" prefHeight="46.0" prefWidth="315.0" text="Giao dịch thành công" textFill="#00ff3c">
+            <ImageView fitHeight="43.0" fitWidth="72.0" layoutX="14.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/images/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="11.0" prefHeight="24.0" prefWidth="137.0" text="Transaction">
                <font>
-                  <Font size="32.0" />
+                  <Font name="Courier New Bold" size="20.0" />
                </font>
             </Label>
-            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="360.0" style="-fx-background-color: pink;">
-               <children>
-                  <ImageView fitHeight="43.0" fitWidth="72.0" layoutX="14.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../assets/images/Logo.png" />
-                     </image>
-                  </ImageView>
-                  <Label layoutX="68.0" layoutY="11.0" prefHeight="24.0" prefWidth="137.0" text="Transaction">
-                     <font>
-                        <Font name="Courier New Bold" size="20.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <Label layoutX="35.0" layoutY="143.0" prefHeight="72.0" prefWidth="290.0" text="(Kiểm tra tài khoản để xác nhận giao dịch. Tài khoản sẽ mất 10-15s để thực hiện giao dịch ngân hàng. Nếu trong vòng 5 phút không nhận lại được tiền thì vui lòng liên hệ CSKH : 0365182504)." wrapText="true">
-               <font>
-                  <Font name="System Italic" size="12.0" />
-               </font>
-            </Label>
-            <Button fx:id="confirmbtn" layoutX="92.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#onConfirmbtnClick" prefHeight="36.0" prefWidth="176.0" style="-fx-background-color: yellow;" text="Xác nhận" textFill="#1122dc">
-               <font>
-                  <Font size="21.0" />
-               </font>
-            </Button>
          </children>
       </AnchorPane>
+      <Label fx:id="message" layoutX="34.0" layoutY="143.0" prefHeight="72.0" prefWidth="290.0" text="(Kiểm tra tài khoản để xác nhận giao dịch. Tài khoản sẽ mất 10-15s để thực hiện giao dịch ngân hàng. Nếu trong vòng 5 phút không nhận lại được tiền thì vui lòng liên hệ CSKH : 0365182504)." wrapText="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmbtn" layoutX="92.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#onConfirmbtnClick" prefHeight="36.0" prefWidth="176.0" style="-fx-background-color: yellow;" text="Xác nhận" textFill="#1122dc">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
    </children>
-</StackPane>
+</AnchorPane>
