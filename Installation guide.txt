@@ -1,0 +1,9 @@
++ Clone Project từ github
++ Bạn có thể sử dụng bất cứ IDE nào để mở project, chúng tôi dùng Eclipse : https://www.eclipse.org/downloads/
++ Download JavaFX : https://gluonhq.com/products/javafx/
++ Mở Project bằng Eclipse
++ Add thư viện javafx vừa download ở trên :
+	Chuột phải vào project trên Tab Project Explorer trên IDE => Build path -> Configure build path . Chọn tab libraries -> Add externals jars -> Tìm đến thư mục chứa javafx và chọn tất cả các file jar trong javafx-sdk-xy.z.t\lib
++ Bấm Run ở trên thanh công cụ , chọn tab argument và add thêm dòng sau vào ô VM arguments :
+--module-path "D:\javafx\javafx-sdk-17.0.0.1\lib" --add-modules=javafx.controls,javafx.fxml
++ Bấm Run
